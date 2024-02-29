@@ -1,0 +1,75 @@
+/* 
+colors
+    dark blue rgb(0, 0, 128)
+    medium blue rgb(0, 0, 255)
+    light blue rgb(128, 128, 255)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.7;
+    padding: 2rem;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 3.6rem;
+    color: rgb(33, 87, 51);
+    background-color: rgb(75, 133, 94);
+    text-align: center;
+}
+
+#author-address {
+    text-align: center;
+    line-height: 1.6;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+hr {
+    border-top: .5rem solid rgb(33, 87, 51);
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: rgb(33, 87, 51);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.unordered-list-example {
+    list-style-type: square;
+    margin-left: 3rem;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgb(33, 87, 51);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+}
