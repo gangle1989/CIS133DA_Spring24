@@ -29,10 +29,22 @@ img {
     border: 1px solid rgb(0, 0, 0);
     margin-left: auto;
     margin-right: auto;
+    width: 500px;
+    height: 500px;
 }
 
-div {  
-   width: 300px;
-   height: auto;
-   display: inline;
+#desertBotanical {
+    filter: grayscale(100%);
+}
+
+#OrpheumTheater {
+    filter: blur(5px);
+}
+
+#TaliesinWest {
+    filter: hue-rotate(90deg);
+}
+
+#ScottsdaleFountain {
+    filter: sepia(100%);
 }

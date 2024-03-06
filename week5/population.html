@@ -70,8 +70,10 @@
             padding: .5rem;
         }
         
-        tbody tr:nth-of-type(even) {
+        #population {
+            tr:nth-child(even) {
             background-color: yellow;
+            }
         }
         
         .table1 {
@@ -132,7 +134,7 @@
                 <th>Founded</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="population">
             <tr>
                 <td>Phoenix</td>
                 <td class="tdRight">1,608,139</td>
