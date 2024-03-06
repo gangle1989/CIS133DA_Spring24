@@ -12,47 +12,6 @@ h1 {
     color: rgb(0, 0, 0);
 }
 
-div {
-    display: inline;
-    margin: auto;
-}
-
-#desertBotanical {
-    border: 1px solid black;
-    height: 400px;
-    width: 500px;
-}
-
-#OrpheumTheater {
-    border: 1px solid black;
-    height: 400px;
-    width: 500px;
-}
-
-#TaliesinWest {
-    border: 1px solid black;
-    height: 400px;
-    width: 500px;
-}
-
-#ScottsdaleFountain {
-    border: 1px solid black;
-    height: 400px;
-    width: 500px;
-}
-
-@media only screen and (min-width: 768px) {
-    body {
-        font-size: 15px;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    body {
-        font-size: 20px;
-    }
-}
-
 img {
     object-fit: cover;
     border: 1px solid rgb(0, 0, 0);
@@ -76,4 +35,16 @@ img {
 
 #ScottsdaleFountain {
     filter: sepia(100%);
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
 }
