@@ -42,17 +42,11 @@ img {
     margin-right: 5px;
 }
 
-@media only screen and (min-width: 500px) and (max-width: 800px) {
-    body {
-        font-size: 10px;
-    }
-
-    img {
-        height: 12rem;
-    }
+img {
+    height: 12rem;
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1000px) {
+@media only screen and (min-width: 800px) {
     body {
         font-size: 12px;
     }
@@ -62,8 +56,12 @@ img {
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
     body {
         font-size: 20px;
+    }
+
+    img {
+        height: 20rem;
     }
 }
