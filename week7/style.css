@@ -42,6 +42,10 @@ img {
     margin-right: 5px;
 }
 
+.refloat {
+    clear: both;
+}
+
 img {
     height: 12rem;
 }
