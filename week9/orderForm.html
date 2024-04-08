@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Logo Shirt</title>
+    <style>
+        input, textarea, select, button {
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        form {
+            font-size: 12px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        hr {
+            width: 578px;
+            text-align: center;
+        }
+
+        table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="tel"], input[type="email"] {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        #submit {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td>
+                    <img src="./images/karen_huger_shirt.jpg" alt="Karen Huger Shirt"/>
+                </td>
+                <td>
+                    Company Logo Shirt
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <select name="colors" id="colors">
+                        <option>Select Color</option>
+                        <option value="White">White</option>
+                        <option value="Black">Black</option>
+                    </select>
+                    <label for="qty">Quantity:</label>
+                    <input type="number"
+                    name="qty"
+                    id="qty"
+                    maxlength="3"
+                    required
+                    autofocus
+                    tabindex="1"
+                    style="width:20px;"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="size">Size:</label>
+                    <input type="radio"
+                    name="size"
+                    id="small"
+                    value="small"/>
+                    <label for="small">Small</label>
+                    <input
+                    type="radio"
+                    name="size"
+                    id="medium"
+                    value="medium"/>
+                    <label for="medium">Medium</label>
+                    <input
+                    type="radio"
+                    name="size"
+                    id="large"
+                    value="large"/>
+                    <label for="large">Large</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input
+                    type="checkbox"
+                    name="logo"
+                    id="logo"
+                    value="yes"/>
+                    <label for="logo">Include Logo</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="file"/>
+                </td>
+            </tr>
+        </table>
+        <hr>        
+        <table>
+            <tr>
+                <td>
+                    <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    required
+                    tabindex="2"
+                    placeholder="First Name"
+                    style="width:200px;"/>
+                </td>
+                <td colspan="2">
+                    <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    required
+                    tabindex="3"
+                    placeholder="Last Name"
+                    style="width:100%;"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input
+                    type="text"
+                    name="street"
+                    id="street"
+                    required
+                    tabindex="4"
+                    placeholder="Street Address"
+                    style="width:100%;"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    required
+                    tabindex="5"
+                    placeholder="City"
+                    style="width:200px;"/>
+                </td>
+                <td>
+                    <input
+                    type="text"
+                    name="State"
+                    id="State"
+                    required
+                    tabindex="6"
+                    placeholder="State"
+                    style="width:100%;"/>
+                </td>
+                <td>
+                    <input
+                    type="number"
+                    name="zip"
+                    id="zip"
+                    required
+                    tabindex="7"
+                    placeholder="Zipcode"
+                    style="width:100%;"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    tabindex="8"
+                    placeholder="Email Address"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    required
+                    tabindex="9"
+                    placeholder="Phone Number"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <label for="delivery">Best Delivery Date:</label>
+                    <input 
+                    type="date"
+                    name="delivery"
+                    id="delivery"
+                    tabindex="10"
+                    required/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <textarea 
+                    name="instructions"
+                    id="instructions"
+                    tabindex="11">
+                    Special Instructions
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" id="submit">
+                    <input 
+                    type="submit"
+                    tabindex="12"/>
+                </td>
+            </tr>
+        </table>    
+    </form>
+</body>
+</html>
