@@ -21,32 +21,35 @@
         }
 
         hr {
-            width: 578px;
-            text-align: center;
+            width: 503px;
         }
 
         th {
-            font-size: 18px;
+            font-size: 20px;
             font-style: italic;
-            vertical-align: text-top;
+            text-align: left;
         }
 
         table {
+            width: 503px;
             display: flex;
             justify-content: center;
             align-items: center;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         input[type="tel"], input[type="email"] {
             width: 100%;
         }
 
-        textarea {
-            width: 100%;
+        #delivery, #submit {
+            text-align: right;
         }
 
-        #submit {
-            text-align: right;
+        textarea {
+            width: 100%;
         }
     </style>
 </head>
@@ -54,7 +57,7 @@
     <form action="" method="post">
         <table>
             <tr>
-                <td>
+                <td rowspan="5">
                     <img src="./images/karen_huger_shirt.jpg" alt="Karen Huger Shirt"/>
                 </td>
                 <th>
@@ -208,8 +211,10 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="3">
+                <td colspan="2">
                     <label for="delivery">Best Delivery Date:</label>
+                </td>
+                <td id="delivery">
                     <input 
                     type="date"
                     name="delivery"
