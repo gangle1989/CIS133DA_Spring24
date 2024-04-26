@@ -89,11 +89,11 @@
                 amigoSize = arySize[i].value;
             }
         }
-
-        document.getElementById('myGrade').innerText = `Letter Grade: ${strGrade} (${pctTot}%)`;
+        document.getElementById('amigoName').innerText = amigoName;
+        document.getElementById('amigoPicture').src = `./images/${amigoType}-${amigoSize}.jpg`;
+        document.getElementById('form').style.display = 'none';
+        alert("Your ticket can now be printed!");
     }
-
-
 
 </script>
 
