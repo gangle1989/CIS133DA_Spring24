@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color:#0e4ba7;
+    --primary-color-dark: #06014e;
+    --text-dark: #0c0a09;
+    --text-light: #78716c;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    position: fixed;
+    isolation: isolate;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    z-index: 9;
+}
+
+.nav_bar{
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.nav_links {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+    gap: 2rem;
+    background-color: rgb(0, 140, 255);
+    z-index: -1;
+}
+
+.nav_links a {
+    text-decoration: none;
+    position: relative;
+    isolation: isolate;
+    padding-bottom: 8px;
+    color: var(--white);
+}
+
+input {
+    padding: 5px;
+}
+
+.container {
+    max-width: 700px;
+    max-height: 900px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6rem;
+}
+
+.input-box {
+   padding: .5rem;
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container form .user_details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: var(--primary-color);
+}
+
+@media (width < 768px){
+    .container {
+        max-width: 400px;
+        max-height: 600px;
+        padding-top: 4rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
+    .container {
+        max-width: 600px;
+        max-height: 800px;
+        padding-top: 4rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 20px;
+    }
+
+    .container {
+        padding-top: 8rem;
+    }
+}

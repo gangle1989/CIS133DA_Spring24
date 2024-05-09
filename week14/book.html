@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
     <title>Book your Stay</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav>
-            <ul>
+            <div class="nav_bar">
+                <div class="logo">
+                    <i class="ri-home-smile-line"></i>&nbsp;&nbsp;&nbsp;SleepInAHauntedHouse.com
+                </div>
+            </div>
+            <ul class="nav_links" id="nav-links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="sallie.html">Sallie Murder House</a></li>
                 <li><a href="villisca.html">Villisca Murder House</a></li>
@@ -17,35 +28,49 @@
             </ul>
         </nav>
     </header>
-
-    <main>
-        <h1>Booking Form</h1>
-        <h2>
-            <div>
-            <img id="WhyChoose" src="./images/why choose us header.png" alt ="why choose us" />
-            <img id="coffee" src="./images/cuppa.png" alt="a cup of coffee" />
+    <div class="container">
+        <div class="title">Book Your Stay</div>
+        <form action="#">
+            <div class="user_details"></div>
+            <div class="input-box">
+                <span class="details">Full Name:</span>
+                <input type="text" placeholder="Enter your name" required>
             </div>
-        </h2>
-        <div class="intro">
-            <ul>
-                <li>The Khan family dog grooming business dates back to 1908, when NYC immigrant Harsha Khan
-                    offered to bathe his neighbors' dogs for $5/bath. Harsha taught his techniques to his son, Sundar, who passed them onto
-                    Prakesh, owner and CEO of A Dog's Life! That's three generations of canine-obsessed entrepreneurs.
-                </li>
-                <li>We care about our loyal customers; ask about exclusive deals available to our Paw Savers Club members!</li>
-                <li>Every service comes with complimentary coffee and snacks--enjoy a latte and free Wi-Fi in our Owner's Lounge while your pup gets their hair did (so to speak).</li>
-            </ul>
-        </div>
-        <div class="HomePhotos">
-            <img src="./images/big nose.jpg" class="HomeDogs" alt="dog with big nose" />
-            <img src="./images/floppy ears guy.jpg" class="HomeDogs" alt="dog with floppy ears" />
-            <img src="./images/fluffy brown dog.jpg" class="HomeDogs" alt="fluffy brown dog" />
-        </div>
-    </main>
-
-    <footer id="footer">
-
-    </footer>
+            <div class="input-box">
+                <span class="details">Email:</span>
+                <input type="email" placeholder="janedoe@gmail.com" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Phone Number:</span>
+                <input type="number" placeholder="555-555-5555" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Gender:</span>
+                <input type="radio" name="gender" id="dot-1">
+                <label for="dot-1">Male</label>
+                <input type="radio" name="gender" id="dot-2">
+                <label for="dot-2">Female</label>
+                <input type="radio" name="gender" id="dot-3">
+                <label for="dot-3">Prefer not to say</label>
+            </div>
+            <div class="input-box">
+                <span class="details">Check-In:</span>
+                <input type="date" id="checkIn" name="checkIn" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Check-Out:</span>
+                <input type="date" id="checkOut" name="checkOut" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Requests:</span>
+                <input type="text" placeholder="Early check-in">
+            </div>
+            <div class="button">
+                <input type="submit" value="Book">
+            </div>
+        </form>
+    </div>
+    <br>
 </body>
 </html>
 </body>

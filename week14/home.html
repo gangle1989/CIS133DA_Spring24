@@ -3,77 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
     <title>Sleep in a Haunted House</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav>
-            <ul>
+            <div class="nav_bar">
+                <div class="logo">
+                    <i class="ri-home-smile-line"></i>&nbsp;&nbsp;&nbsp;SleepInAHauntedHouse.com
+                </div>
+            </div>
+            <ul class="nav_links" id="nav-links">
                 <li><a href="sallie.html">Sallie Murder House</a></li>
                 <li><a href="villisca.html">Villisca Murder House</a></li>
                 <li><a href="borden.html">Lizzie Borden Murder House</a></li>
                 <li><a href="book.html">Book Your Stay</a></li>
             </ul>
         </nav>
+        <div class="section_container header_container" id="home">
+            <h1>Have you ever wanted to sleep in a room where a <span>ghost is looming nearby</span>?</h1>
+        </div>
     </header>
-    <main>
-        <h1>Stay at a haunted house</h1>
-        <div class="intro">
-            <p>
-                We offer accommodations at 3 haunted houses around the contiguous US of A. Bring your ghostbusting gear and book a stay today.
+    <p class="banner">
+        <img src="./images/paranormalActivity.jpg"/>
+    </p>
+    <section class="section_container about_container" id="about">
+        <div class="about_content">
+            <p class="section_subheader">Look no further.</p>
+            <h2 class="section_header">SleepInAHauntedHouse.com is your one stop shop for booking short term or long term stays in the most haunted* houses in America!</h2>
+            <p class="section_description">
+                *houses may or may not actually be haunted.
             </p>
         </div>
-        <table>
-            <caption>
-                Available Properties
-            </caption>  
-            <thead>
-                <th>Sallie Murder House</th>
-                <th>Villisca Axe Murder House</th>
-                <th>Lizzie Borden House</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        blah blah 1
-                    </td>
-                    <td>
-                        blah blah 2
-                    </td>
-                    <td>
-                        blah blah 3
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        blah blah 4
-                    </td>
-                    <td>
-                        blah blah 5
-                    </td>
-                    <td>
-                        blah blah 6
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        blah blah 7
-                    </td>
-                    <td>
-                        blah blah 8
-                    </td>
-                    <td>
-                        blah blah 9
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
-
-    <footer id="footer">
-
-    </footer>
+    </section>
+    <section class="section_container">
+        <p class="section_subheader_homepage">OUR PROPERTIES</p>
+        <p class="homepageHouses">
+            <img src="./images/sallieHouseFront.png"/>
+            <img src="./images/villiscaHouseFront.jpg"/>
+            <img src="./images/lizzieBordenOutside.webp"/>
+        </p>
+        <h2 class="section_header">We offer accommodations at 3 haunted houses around the contiguous US of A. Bring your ghostbusting gear and book a stay today.</h2>
+        <div class="tableArea">
+            <table>
+                <thead>
+                    <th>Property</th>
+                    <th>Price per Room</th>
+                    <th>Number of Rooms</th>
+                    <th>Whole house available?</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Villisca House
+                        </td>
+                        <td class="centered_td">
+                            $200-400 (based on room)
+                        </td>
+                        <td class="centered_td">
+                            3
+                        </td>
+                        <td class="centered_td">
+                            Yes
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Lizzie Borden House
+                        </td>
+                        <td class="centered_td">
+                            $100-600 (based on room)
+                        </td>
+                        <td class="centered_td">
+                            2
+                        </td>
+                        <td class="centered_td">
+                            No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Sallie House
+                        </td>
+                        <td class="centered_td">
+                            $5-300 (based on room)
+                        </td>
+                        <td class="centered_td">
+                            3
+                        </td>
+                        <td class="centered_td">
+                            Yes
+                        </td>
+                    </tr>
+                </tbody>
+            </table>   
+        </div>
+    </section>
+    <section class="section_container booking_container">
+        <form action="/" class="booking_form">
+            <div class="input_group">
+                <span><i class="ri-calendar-2-fill"></i></span>
+                <div>
+                    <label for="check-in">CHECK IN</label>
+                    <input type="text" placeholder="Check In"/>
+                </div>
+            <div class="input_group">
+                <span><i class="ri-calendar-2-fill"></i></span>
+                <div>
+                    <label for="check-out">CHECK OUT</label>
+                    <input type="text" placeholder="Check Out"/>
+                </div>
+            <div class="input_group">
+                <span><i class="ri-user-fill"></i></span>
+                <div>
+                    <label for="guest">GUEST</label>
+                    <input type="text" placeholder="Guest"/>
+                </div>  
+            </div>
+            <div class="input_group input_btn"></div>
+                <button class="btn">CHECK OUT</button>
+        </form>
+    </section>
+    <footer class="footer" id="contact">
+        <div class="section_container footer_container">
+            <div class="footer_col">
+                <div class="footer_logo">
+                    <a href="home.html"><i class="ri-home-smile-line"></i>&nbsp;&nbsp;&nbsp;SleepInAHauntedHouse.com</a>
+                </div>
+                <p class="footer_description">
+                We are not responsible for any injuries sustained on our properties--<br>
+                if you are reading this right now, you agree. No take-backs.
+                </p>
+            </div>
+            <div class="footer_col">
+                <h4>QUICK LINKS</h4>
+                <ul class="footer_links">
+                    <li><a href="sallie.html">Sallie Murder House</a></li>
+                    <li><a href="villisca.html">Villisca Murder House</a></li>
+                    <li><a href="borden.html">Lizzie Borden Murder House</a></li>
+                    <li><a href="book.html">Book Your Stay</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>RESOURCES</h4>
+                <ul class="footer_links">
+                    <li><a href="https://theghostguild.weebly.com/">The Ghost Guild</a></li>
+                    <li><a href="https://ghostresearch.org/">Ghost Research Society</a></li>
+                    <li><a href="https://www.laspirits.com/">Louisiana Spirits</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>CONTACT US</h4>
+                <ul class="footer_links">
+                    <li><a href="#">MillionaireLarry@earthlink.net</a></li>
+                </ul>
+                <div class="footer_socials">
+                    <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="#"><i class="ri-snapchat-line"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bar">
+            Copyright @ 2024 Millionaire Larry Productions
+        </div>
+    </footer>    
 </body>
 </html>
 </body>
